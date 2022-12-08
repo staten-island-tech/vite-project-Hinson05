@@ -98,4 +98,5 @@ button:focus-visible {
 
 text {
   text-align: center;
+  display: flex;
 }
