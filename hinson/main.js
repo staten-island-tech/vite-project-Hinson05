@@ -1,6 +1,5 @@
 import "./style.css";
-import { apple } from "./apple.";
-
+import { apple } from "./apple";
 const DOMSelectors = {
   submit: document.getElementById("submit"),
   list: document.getElementById("list"),
