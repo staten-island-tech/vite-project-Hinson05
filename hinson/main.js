@@ -1,11 +1,15 @@
 import "./style.css";
 import { apple } from "./apple";
 const DOMSelectors = {
-  submit: document.getElementById("submit"),
-  list: document.getElementById("list"),
-  name: document.getElementById("name"),
-  num: document.getElementById("num"),
-  clear: document.getElementById("clear"),
-  delete: document.getElementById("delete"),
+  phone: document.getElementById("phone"),
+  laptop: document.getElementById("laptop"),
+  ipad: document.getElementById("ipad"),
+  headphones: document.getElementById("headphones"),
 };
-setupCounter(document.querySelector("#counter"));
+
+function filtration() {
+  const phone = apple.filter(apple.type === "Phone");
+  const headphones = apple.filter(apple.type === "Headphones");
+  const laptop = apple.filter(apple.type === "Laptop");
+  const iphone = apple.filter(apple.type === "Iphone");
+}
