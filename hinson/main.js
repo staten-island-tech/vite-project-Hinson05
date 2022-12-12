@@ -5,6 +5,7 @@ const DOMSelectors = {
   laptop: document.getElementById("laptop"),
   ipad: document.getElementById("ipad"),
   headphones: document.getElementById("headphones"),
+  div: document.getElementById("app"),
 };
 
 function filtration() {

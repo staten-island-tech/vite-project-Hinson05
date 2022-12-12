@@ -5,6 +5,8 @@ const apple = [
     price: "999",
     year: "2022",
     screen: "14 ",
+    image:
+      "https://th.bing.com/th/id/OIP.7qR3rCB_iKCCPzUUmHwx8gHaE7?w=298&h=199&c=7&r=0&o=5&pid=1.7",
   },
   {
     model: "MacBook Pro",
