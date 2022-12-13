@@ -2,3 +2,7 @@ text {
   text-align: center;
   display: flex;
 }
+image {
+  height: 15px;
+  width: 15px;
+}

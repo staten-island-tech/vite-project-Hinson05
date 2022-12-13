@@ -9,8 +9,19 @@ const DOMSelectors = {
 };
 
 function filtration() {
-  const phone = apple.filter(apple.type === "Phone");
-  const headphones = apple.filter(apple.type === "Headphones");
-  const laptop = apple.filter(apple.type === "Laptop");
-  const iphone = apple.filter(apple.type === "Iphone");
+  const filphone = apple.filter(element.type == "Phone");
+  const filheadphones = apple.filter(element.type == "Headphones");
+  const fillaptop = apple.filter(element.type == "Laptop");
+  const filipad = apple.filter(element.type == "Ipad");
 }
+
+function insert() {
+  apple.foreach((element) =>
+    DOMSelectors.div.insertAdjacentHTML(
+      "beforeend",
+      `<p>${apple.name}</p> <img src="${element.image}"`
+    )
+  );
+}
+
+insert();
