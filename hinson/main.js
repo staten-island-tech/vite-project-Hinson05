@@ -8,18 +8,16 @@ const DOMSelectors = {
   div: document.getElementById("app"),
 };
 
-function filtration() {
-  const filphone = apple.filter(element.type == "Phone");
-  const filheadphones = apple.filter(element.type == "Headphones");
-  const fillaptop = apple.filter(element.type == "Laptop");
-  const filipad = apple.filter(element.type == "Ipad");
-}
+const filphone = apple.filter((element) => element.type == "Phone");
+const filheadphones = apple.filter((element) => element.type == "Headphones");
+const fillaptop = apple.filter((element) => element.type == "Laptop");
+const filipad = apple.filter((element) => element.type == "Ipad");
 
 function insert() {
-  apple.foreach((element) =>
+  apple.forEach((element) =>
     DOMSelectors.div.insertAdjacentHTML(
       "beforeend",
-      `<p>${apple.name}</p> <img src="${element.image}"`
+      `<p>${element.model}</p> <img src="${element.image}">`
     )
   );
 }

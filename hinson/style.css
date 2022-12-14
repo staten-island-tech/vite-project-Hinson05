@@ -1,8 +1,18 @@
 text {
   text-align: center;
-  display: flex;
+  justify-content: space-around;
+  font: 30px;
 }
 image {
   height: 15px;
   width: 15px;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+}
+button {
+  align-items: center;
 }
