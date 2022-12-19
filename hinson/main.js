@@ -20,7 +20,7 @@ function insert() {
   apple.forEach((element) =>
     DOMSelectors.div.insertAdjacentHTML(
       "beforeend",
-      `<p>${element.model}</p> <img src="${element.image}">`
+      `<div class="flex"><p>${element.model} $${element.price}</p> <img src="${element.image}"></div>`
     )
   );
 }
@@ -28,21 +28,20 @@ function insert() {
 function buttoninsert() {
   DOMSelectors.div.insertAdjacentHTML(
     "beforeend",
-    `<p>${filphone.name}</p> <img src="${filphone.image}">`
+    `<p>${filphone.model}</p> <img src="${filphone.image}">`
   );
   DOMSelectors.div.insertAdjacentHTML(
     "beforeend",
-    `<p>${filheadphone.name}</p> <img src="${filheadphone.image}">`
+    `<p>${filheadphone.model}</p> <img src="${filheadphone.image}">`
   );
   DOMSelectors.div.insertAdjacentHTML(
     "beforeend",
-    `<p>${fillaptop.name}</p> <img src="${fillaptop.image}">`
+    `<p>${fillaptop.model}</p> <img src="${fillaptop.image}">`
   );
   DOMSelectors.div.insertAdjacentHTML(
     "beforeend",
-    `<p>${filipad.name}</p> <img src="${filipad.image}">`
+    `<p>${filipad.model}</p> <img src="${filipad.image}">`
   );
 }
 
 insert();
-buttoninsert();

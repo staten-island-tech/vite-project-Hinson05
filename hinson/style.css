@@ -1,7 +1,7 @@
-text {
+.text {
   text-align: center;
   justify-content: space-around;
-  font: 30px;
+  font-size: 60px;
 }
 image {
   height: 15px;
@@ -13,6 +13,29 @@ html {
   justify-content: center;
   align-content: space-around;
 }
-button {
-  align-items: center;
+.button {
+  text-align: center;
+  display: inline-block;
+  margin-left: 200px;
+  margin-right: 200px;
+  font-size: 15px;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flex {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.model {
+  text-align: center;
+}
+.disclaim {
+  text-align: center;
 }
