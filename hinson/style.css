@@ -19,6 +19,8 @@ html {
   margin-left: 200px;
   margin-right: 200px;
   font-size: 15px;
+  border: solid 5px;
+  margin-bottom: 35px;
 }
 
 #app {
@@ -38,4 +40,14 @@ html {
 }
 .disclaim {
   text-align: center;
+}
+#head {
+  border-bottom: solid 5px;
+}
+#box {
+  border: solid 5px;
+}
+#imag {
+  border: solid 5px;
+  margin-top: -20px;
 }

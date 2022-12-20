@@ -20,7 +20,7 @@ function insert() {
   apple.forEach((element) =>
     DOMSelectors.div.insertAdjacentHTML(
       "beforeend",
-      `<div class="flex"><p>${element.model} $${element.price}</p> <img src="${element.image}"></div>`
+      `<div class="flex"><p id="box">${element.model} $${element.price}</p> <img id="imag" src="${element.image}"></div>`
     )
   );
 }
