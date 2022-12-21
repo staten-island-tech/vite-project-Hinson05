@@ -16,8 +16,8 @@ html {
 .button {
   text-align: center;
   display: inline-block;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 195px;
+  margin-right: 195px;
   font-size: 15px;
   border: solid 5px;
   margin-bottom: 35px;
@@ -46,8 +46,13 @@ html {
 }
 #box {
   border: solid 5px;
+  background-color: #adb5bd;
 }
 #imag {
   border: solid 5px;
   margin-top: -20px;
+}
+#head {
+  background-color: #adb5bd;
+  border: solid 5px;
 }

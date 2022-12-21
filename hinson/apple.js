@@ -29,7 +29,7 @@ const apple = [
   {
     model: "Iphone 14 Pro Max",
     type: "Phone",
-    price: "999",
+    price: "1099",
     year: "2022",
     screen: "6.7",
     image:
