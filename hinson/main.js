@@ -43,5 +43,5 @@ function buttoninsert() {
     `<p>${filipad.model}</p> <img src="${filipad.image}">`
   );
 }
-
+ DOMSelectors.phone.addEventListener("click", function());
 insert();
