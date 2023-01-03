@@ -7,15 +7,13 @@ const DOMSelectors = {
   headphones: document.getElementById("headphones"),
   div: document.getElementById("app"),
 };
+const toggle = document.getElementById('dark');
+const body = document.querySelector('site');
+toggle.addEventListener('click' , function(){
+  site.style.background = 'black';
+  site.style.color = 'white';
+});
 
-const filphone = apple.filter((element) => element.type == "Phone");
-filphone.forEach((filphone) => console.log(filphone.name));
-const filheadphones = apple.filter((element) => element.type == "Headphones");
-filheadphones.forEach((filheadphone) => console.log(filheadphone.name));
-const fillaptop = apple.filter((element) => element.type == "Laptop");
-fillaptop.forEach((fillaptop) => console.log(fillaptop.name));
-const filipad = apple.filter((element) => element.type == "Ipad");
-filipad.forEach((filipad) => console.log(filipad.name));
 function insert() {
   apple.forEach((element) =>
     DOMSelectors.div.insertAdjacentHTML(
@@ -43,5 +41,37 @@ function buttoninsert() {
     `<p>${filipad.model}</p> <img src="${filipad.image}">`
   );
 }
- DOMSelectors.phone.addEventListener("click", function());
+DOMSelectors.phone.addEventListener("click", function(){
+  const filphone = apple.filter((element) => element.type == "Phone");
+filphone.forEach((filphone) => console.log(filphone.name));
+  DOMSelectors.div.insertAdjacentHTML(
+    "beforeend",
+    `<p>${filphone.model}</p> <img src="${filphone.image}">`
+  );
+});
+DOMSelectors.ipad.addEventListener("click", function(){
+  const filipad = apple.filter((element) => element.type == "Ipad");
+filipad.forEach((filipad) => console.log(filipad.name));
+  DOMSelectors.div.insertAdjacentHTML(
+    "beforeend",
+    `<p>${filipad.model}</p> <img src="${filphone.image}">`
+  );
+});
+DOMSelectors.headphones.addEventListener("click", function(){
+  const filheadphones = apple.filter((element) => element.type == "Headphones");
+filheadphones.forEach((filheadphone) => console.log(filheadphone.name));
+  DOMSelectors.div.insertAdjacentHTML(
+    "beforeend",
+    `<p>${filheadphones.model}</p> <img src="${filphone.image}">`
+  );
+});
+DOMSelectors.laptop.addEventListener("click", function(){
+  const fillaptop = apple.filter((element) => element.type == "Laptop");
+fillaptop.forEach((fillaptop) => console.log(fillaptop.name));
+  DOMSelectors.div.insertAdjacentHTML(
+    "beforeend",
+    `<p>${fillaptop.model}</p> <img src="${filphone.image}">`
+  );
+});
 insert();
+buttoninsert();
