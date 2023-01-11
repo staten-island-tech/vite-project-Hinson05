@@ -55,7 +55,7 @@ const apple = [
   },
   {
     model: "Ipad Pro M2",
-    type: "Phone",
+    type: "Ipad",
     price: "799",
     year: "2022",
     screen: "12.9",

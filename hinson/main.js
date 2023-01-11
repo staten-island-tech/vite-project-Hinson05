@@ -7,6 +7,7 @@ const DOMSelectors = {
   headphones: document.getElementById("headphones"),
   div: document.getElementById("app"),
 };
+
 const toggle = document.getElementById("dark");
 const body = document.querySelector("site");
 toggle.addEventListener("click", function () {
@@ -55,33 +56,42 @@ DOMSelectors.phone.addEventListener("click", function () {
   filphone.forEach((element) =>
     DOMSelectors.div.insertAdjacentHTML(
       "afterend",
-      `<div class="flex><p>${element.model}</p> <img src="${element.image}</div>">`
+      `<div class='flex'><p>${element.model}</p><img src = '${element.image}'></div>`
     )
   );
 });
 
 DOMSelectors.ipad.addEventListener("click", function () {
   const filipad = apple.filter((element) => element.type == "Ipad");
-  filipad.forEach((filipad) => console.log(filipad.name));
-  DOMSelectors.div.insertAdjacentHTML(
-    "afterend",
-    `<p>${filipad.model}</p> <img src="${filphone.image}">`
+  console.log(filipad);
+  DOMSelectors.div.innerHTML = "";
+  filipad.forEach((element) =>
+    DOMSelectors.div.insertAdjacentHTML(
+      "afterend",
+      `<div class='flex'><p>${element.model}</p><img src = '${element.image}'></div>`
+    )
   );
 });
 DOMSelectors.headphones.addEventListener("click", function () {
   const filheadphones = apple.filter((element) => element.type == "Headphones");
-  filheadphones.forEach((filheadphone) => console.log(filheadphone.name));
-  DOMSelectors.div.insertAdjacentHTML(
-    "afterend",
-    `<p>${filheadphones.model}</p> <img src="${filphone.image}">`
+  console.log(filheadphones);
+  DOMSelectors.div.innerHTML = "";
+  filheadphones.forEach((element) =>
+    DOMSelectors.div.insertAdjacentHTML(
+      "afterend",
+      `<div class='flex'><p>${element.model}</p><img src = '${element.image}'></div>`
+    )
   );
 });
 DOMSelectors.laptop.addEventListener("click", function () {
   const fillaptop = apple.filter((element) => element.type == "Laptop");
-  fillaptop.forEach((fillaptop) => console.log(fillaptop.name));
-  DOMSelectors.div.insertAdjacentHTML(
-    "afterend",
-    `<p>${fillaptop.model}</p> <img src="${filphone.image}">`
+  console.log(fillaptop);
+  DOMSelectors.div.innerHTML = "";
+  fillaptop.forEach((element) =>
+    DOMSelectors.div.insertAdjacentHTML(
+      "afterend",
+      `<div class='flex'><p>${element.model}</p><img src = '${element.image}'></div>`
+    )
   );
 });
 insert();
