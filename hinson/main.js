@@ -30,25 +30,6 @@ function insert() {
   );
 }
 
-function buttoninsert() {
-  DOMSelectors.div.insertAdjacentHTML(
-    "beforeend",
-    `<p>${filphone.model}</p> <img src="${filphone.image}">`
-  );
-  DOMSelectors.div.insertAdjacentHTML(
-    "beforeend",
-    `<p>${filheadphone.model}</p> <img src="${filheadphone.image}">`
-  );
-  DOMSelectors.div.insertAdjacentHTML(
-    "beforeend",
-    `<p>${fillaptop.model}</p> <img src="${fillaptop.image}">`
-  );
-  DOMSelectors.div.insertAdjacentHTML(
-    "beforeend",
-    `<p>${filipad.model}</p> <img src="${filipad.image}">`
-  );
-}
-
 DOMSelectors.phone.addEventListener("click", function () {
   const filphone = apple.filter((element) => element.type == "Phone");
   console.log(filphone);
@@ -56,7 +37,7 @@ DOMSelectors.phone.addEventListener("click", function () {
   filphone.forEach((element) =>
     DOMSelectors.div.insertAdjacentHTML(
       "afterend",
-      `<div class='flex'><p>${element.model}</p><img src = '${element.image}'></div>`
+      `<div class= "flex" ><p>${element.model}</p><img src = '${element.image}'></div>`
     )
   );
 });
@@ -68,7 +49,7 @@ DOMSelectors.ipad.addEventListener("click", function () {
   filipad.forEach((element) =>
     DOMSelectors.div.insertAdjacentHTML(
       "afterend",
-      `<div class='flex'><p>${element.model}</p><img src = '${element.image}'></div>`
+      `<div class= "flex"><p>${element.model}</p><img src = '${element.image}'></div>`
     )
   );
 });
@@ -79,7 +60,7 @@ DOMSelectors.headphones.addEventListener("click", function () {
   filheadphones.forEach((element) =>
     DOMSelectors.div.insertAdjacentHTML(
       "afterend",
-      `<div class='flex'><p>${element.model}</p><img src = '${element.image}'></div>`
+      `<div class= "flex"><p>${element.model}</p><img src = '${element.image}'></div>`
     )
   );
 });
@@ -90,7 +71,7 @@ DOMSelectors.laptop.addEventListener("click", function () {
   fillaptop.forEach((element) =>
     DOMSelectors.div.insertAdjacentHTML(
       "afterend",
-      `<div class='flex'><p>${element.model}</p><img src = '${element.image}'></div>`
+      `<div class="flex"><p>${element.model}</p><img src = '${element.image}'></div>`
     )
   );
 });
